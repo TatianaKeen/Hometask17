@@ -28,7 +28,7 @@ class UserHandler {
 
       for (let i = 0; i < userKeys.length; i++) {
         if (ALLOWED_KEYS.includes(userKeys[i])) {
-          if (userKeys[i] == 'address') {
+          if (userKeys[i] === 'address') {
             newUser['city'] = userInfo[i].city;
             break;
           }
